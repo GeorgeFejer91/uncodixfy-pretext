@@ -1,6 +1,6 @@
 ---
 name: uncodixfy-pretext
-description: Design, build, or revise text-bearing HTML interfaces for browsers, phones, and Tauri WebViews using restrained Uncodixfy aesthetics, box-first geometry, and required Pretext measurement. Use when control labels, responsive text, or bounded regions must remain legible through resizing and localization. Do not use for native-only UI or canvas-only rendering.
+description: Design, build, or revise text-bearing HTML interfaces for browsers, phones, and Tauri WebViews using restrained Uncodixfy aesthetics, box-first geometry, and required Pretext measurement. Use when control labels, responsive text, or bounded regions must remain legible through resizing and localization. Includes an optional accordion stretch layout for bounded panels that must adapt to width and height without panel scrollbars. Do not use for native-only UI or canvas-only rendering.
 ---
 
 # Uncodixfy Pretext
@@ -32,6 +32,10 @@ Keep a small type and spacing scale. Preserve readable minimum sizes, contrast, 
 ```
 
 Use the same centering for text-only and icon-only controls. Center the group, then let Pretext evaluate the label's remaining inner space.
+
+## Optional mode: accordion stretch layout
+
+When the user requests an accordion stretch layout, or describes a bounded panel whose control spacing and type should expand and compress with both width and height while preserving group order, read [references/accordion-stretch.md](references/accordion-stretch.md). Apply that mode only to the requested surface; keep the ordinary box-first layout for other pages. Its no-scrollbar contract applies to the bounded panel, with dialogs and overlays handled by their own content policy.
 
 ## Pretext decision rule
 

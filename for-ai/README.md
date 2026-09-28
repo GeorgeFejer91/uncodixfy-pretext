@@ -1,6 +1,6 @@
 # Maintainer control plane
 
-Read this before editing the skill. Runtime behavior is defined by `../SKILL.md` and `../references/pretext.md`; this folder only routes maintainers.
+Read this before editing the skill. Runtime behavior is defined by `../SKILL.md` and the task-routed files in `../references/`; this folder only routes maintainers.
 
 | Need | Read |
 | --- | --- |
